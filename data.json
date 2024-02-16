@@ -1,0 +1,54 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Killer of the Flower Moon",
+      "director": "Martin Scorcese",
+      "runtime": 206,
+      "social": "@killersofttheflowermoon",
+      "img": "https://all.web.img.acsta.net/pictures/23/08/30/13/53/1926078.jpg/r_2500_x"
+    },
+    {
+      "id": "2",
+      "title": "A Hitchhikers Guide",
+      "director": "Garth Jennings",
+      "runtime": 206,
+      "social": "@killersofttheflowermoon",
+      "img": "https://all.web.img.acsta.net/pictures/23/08/30/13/53/1926078.jpg/r_2500_x"
+    },
+    {
+      "id": "3",
+      "title": "Star Wars Episode 1",
+      "director": "Martin Scorcese",
+      "runtime": 206,
+      "social": "@killersofttheflowermoon",
+      "img": "https://all.web.img.acsta.net/pictures/23/08/30/13/53/1926078.jpg/r_2500_x"
+    },
+    {
+      "id": "4",
+      "title": "Lord of the Rings",
+      "director": "Martin Scorcese",
+      "runtime": 206,
+      "social": "@killersofttheflowermoon",
+      "img": "https://all.web.img.acsta.net/pictures/23/08/30/13/53/1926078.jpg/r_2500_x"
+    },
+    {
+      "id": "ltpkhz0",
+      "createdAt": 1708072854411,
+      "title": "new Movie",
+      "director": "New Director",
+      "runtime": 0,
+      "img": "",
+      "social": ""
+    },
+    {
+      "id": "gefdcwp",
+      "createdAt": 1708072861457,
+      "title": "new Movie",
+      "director": "New Director",
+      "runtime": 0,
+      "img": "",
+      "social": ""
+    }
+  ]
+}
