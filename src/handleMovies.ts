@@ -19,7 +19,7 @@ function fakeDelay(key: string = "") {
   }
   fakeCache[key] = true;
   return new Promise((resolve) => {
-    setTimeout(resolve, 1000);
+    setTimeout(resolve, 500);
   });
 }
 
@@ -58,4 +58,25 @@ export async function createMovie() {
     body: JSON.stringify(movie),
   });
   return movie;
+}
+
+export async function updateMovie(id: string, movie: Movie) {
+  await fakeDelay();
+  await fetch(`http://localhost:5001/movies/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(movie),
+  });
+  return movie;
+}
+export async function deleteMovie(id: string) {
+  await fakeDelay();
+  await fetch(`http://localhost:5001/movies/${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 }
