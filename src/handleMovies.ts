@@ -1,4 +1,5 @@
 import sortBy from "sort-by";
+import { matchSorter } from "match-sorter";
 
 export type Movie = {
   id: number;
@@ -23,11 +24,12 @@ function fakeDelay(key: string = "") {
   });
 }
 
-export async function getMovies() {
-  await fakeDelay(`getMovies`);
+export async function getMovies(query?: string) {
+  await fakeDelay(`getMovies:${query}`);
   let movies: Movie[] = await fetch("http://localhost:5001/movies").then(
     (res) => res.json()
   );
+  if (query) return matchSorter(movies, query, { keys: ["title"] });
   return movies.sort(sortBy("title", "createdAt")) ?? [];
 }
 

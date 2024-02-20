@@ -9,12 +9,28 @@
       "id": "3"
     },
     {
-      "title": "Killers of the Flower Moon",
-      "director": "Martin Scorcese",
-      "social": "@killersofttheflowermoon",
-      "img": "https://all.web.img.acsta.net/pictures/23/08/30/13/53/1926078.jpg/r_2500_x",
-      "runtime": "206",
-      "id": "4"
+      "title": "Terminator",
+      "director": "New Director",
+      "social": "",
+      "img": "",
+      "runtime": "0",
+      "id": "kd19uqc"
+    },
+    {
+      "title": "Herr der Ringe",
+      "director": "New Director",
+      "social": "",
+      "img": "",
+      "runtime": "0",
+      "id": "vep5l2e"
+    },
+    {
+      "title": "Der Ja Sager",
+      "director": "New Director",
+      "social": "",
+      "img": "",
+      "runtime": "0",
+      "id": "3qe6vzp"
     }
   ]
 }
