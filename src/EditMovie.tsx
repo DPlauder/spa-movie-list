@@ -11,7 +11,7 @@ export async function action({
   const formData = await request.formData();
   const updatedMovie = Object.fromEntries(formData) as unknown;
   await updateMovie(params.id, updatedMovie as Movie);
-  return redirect;
+  return redirect(`/movies/${params.id}`);
 }
 
 export default function EditMovie() {

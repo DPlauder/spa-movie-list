@@ -11,6 +11,13 @@ type MovieType = {
 
 export async function loader({ params }: { params: { id: string } }) {
   const movie = await getMovie(params.id);
+  if (!movie) {
+    console.log("hi loader");
+    throw new Response("Movie not found", {
+      status: 404,
+      statusText: "Not Found",
+    });
+  }
   return { movie };
 }
 

@@ -18,17 +18,26 @@ export default function Router() {
       loader: rootLoader,
       action: rootAction,
       children: [
-        { index: true, element: <Index /> },
-        { path: "/movies/:id", element: <Movie />, loader: MovieLoader as any },
         {
-          path: "/movies/:id/edit",
-          element: <EditMovie />,
-          loader: MovieLoader as any,
-          action: editAction as any,
-        },
-        {
-          path: "/movies/:id/destroy",
-          action: destroyAction as any,
+          errorElement: <ErrorPage />,
+          children: [
+            { index: true, element: <Index /> },
+            {
+              path: "/movies/:id",
+              element: <Movie />,
+              loader: MovieLoader as any,
+            },
+            {
+              path: "/movies/:id/edit",
+              element: <EditMovie />,
+              loader: MovieLoader as any,
+              action: editAction as any,
+            },
+            {
+              path: "/movies/:id/destroy",
+              action: destroyAction as any,
+            },
+          ],
         },
       ],
     },
